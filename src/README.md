@@ -1,17 +1,6 @@
-######################################################################
-# Modelling Sleep Duration Using Gaussian Processes
-# LE49: MiniProject
-# Jan Ondras (jo356), Trinity College
-# 2017/2018
-######################################################################
-# README
-######################################################################
-
-Filenames are mostly self-explanatory. 
 The source code files form the following pipeline:
 
-######################################################################
-1.) ANALYSIS & PREPROCESSING
+## 1.) Analysis & preprocessing
 
 	user_means_distributions.ipynb
 		For each user calculate mean of particular measure => show distributions.
@@ -30,14 +19,12 @@ The source code files form the following pipeline:
 		Also perform data cleaning: remove measurements with sleepduration > 20 hours
 		Also show few more stats - on weekly basis
 
-######################################################################
-2.) FITTING GP => GETTING KERNEL PARAMETERS
+## 2.) Fit GP => get kernel parameters
 
 	fit_user_GP_sleepduration.ipynb
 		For each user fit GP to sleepduration data and save extracted kernel parameters; 1264 users; both kernel types
 
-######################################################################
-3.) CLUSTERING KERNEL PARAMETERS
+## 3.) Cluster users in terms of the kernel parameters
 
 	cluster_params_periodicKernel.ipynb
 		Perform hierarchical clustering using periodic kernel parameters. 
@@ -52,8 +39,7 @@ The source code files form the following pipeline:
 	ARI_periodicKernel.ipynb
 		Calculate Adjusted Rand Index for the 2 kinds of periodic kernel.
 
-######################################################################
-4.) INTERPRETATION OF CLUSTERS (in terms of other measures than kernel parameters)
+## 4.) Interpretation of clusters (in terms of other measures than the kernel parameters)
 
 	interpret_clustering.ipynb
 		Extract all the statistics about discovered clusters.
