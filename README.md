@@ -1,4 +1,4 @@
-# Modelling sleep duration using Gaussian Processes
+# Modelling Sleep Duration Using Gaussian Processes
 
 In this project I cluster users of wearable sensors based on their sleep duration
 patterns. First, Gaussian Process (GP) models are fitted to users’ sleep duration
@@ -11,3 +11,5 @@ that kernel parameters other than periodicity are not informative for the cluste
 My results reveal two main clusters of users who differ primarily in periodicity of
 their sleeping patterns. Additionally, I provide extensive interpretation in terms of
 other measures such as bed in and bed out times or number of steps. 
+
+- Report [[PDF]](https://github.com/jancio/Modelling-Sleep-Duration-Using-Gaussian-Processes/blob/master/Report_SleepDurationGP.pdf)
